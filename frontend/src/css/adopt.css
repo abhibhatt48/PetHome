@@ -1,0 +1,96 @@
+.card,
+.image__container img,
+.small__images img {
+  border-radius: 2% !important;
+  -webkit-box-shadow: 6px 6px 14px -5px rgba(217, 217, 217, 1);
+  -moz-box-shadow: 6px 6px 14px -5px rgba(217, 217, 217, 1);
+  box-shadow: 6px 6px 14px -5px rgba(217, 217, 217, 1);
+}
+
+.card-img-top {
+  border-top-left-radius: 2% !important;
+  border-top-right-radius: 2% !important;
+  height: 200px;
+}
+.adopt__container a {
+  text-decoration: none;
+  color: var(--darkblue);
+}
+.adopt__container a:hover {
+  text-decoration: none;
+  color: var(--darkblue);
+}
+
+/* single-button */
+.adopt__container__single {
+  min-height: 500px;
+  text-align: center;
+  margin-top: 20px;
+}
+.image__container img {
+  width: 500px;
+  height: auto;
+}
+.about a {
+  color: var(--darkblue) !important;
+}
+.about a:hover {
+  text-decoration: none !important;
+}
+
+.small__images img {
+  margin: 10px 0px;
+  width: 330px;
+  height: 270px;
+  transition: 0.3s ease-in-out;
+}
+.small__images img:hover {
+  transform: scale(0.95);
+}
+
+.about {
+  text-align: left;
+  color: var(--darkblue);
+}
+.about__name {
+  font-size: xx-large;
+  font-weight: 700;
+  color: var(--myyellow);
+}
+.about__category,
+.about__breed {
+  font-size: larger;
+  font-weight: 650;
+}
+.about__contact,
+.about__about {
+  font-size: larger;
+  font-weight: 600;
+}
+.about__about{
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  .image__container img {
+    width: 300px;
+    height: auto;
+  }
+  .about {
+    margin: auto !important;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .image__container img {
+    width: 300px;
+    height: auto;
+  }
+  .about {
+    margin: auto !important;
+    text-align: center;
+  }
+  .card-img-top{
+    height: auto;
+  }
+}

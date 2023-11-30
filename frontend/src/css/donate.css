@@ -1,0 +1,74 @@
+.form-control {
+  display: inline !important;
+}
+.form-control:focus {
+  border-color: rgba(20, 20, 20, 0.2) !important;
+  box-shadow: none !important;
+}
+.donate {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.donate__form {
+  text-align: left;
+}
+.file__area {
+  width: 100%;
+  position: relative;
+}
+.file__area input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.file__area .file__dummy {
+  width: 100%;
+  padding: 30px;
+  background: rgba(20, 40, 212, 0.2);
+  border: 2px rgba(20, 40, 212, 0.2);
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+.file__area .file__dummy .success {
+  display: none;
+}
+.file__area:hover .file__dummy {
+  background: rgba(20, 40, 212, 0.3);
+}
+.file__area input[type="file"]:focus + .file__dummy {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.file__area input[type="file"]:valid + .file__dummy {
+  border-color: rgba(31, 160, 31, 0.3);
+  background-color: rgba(31, 160, 31, 0.3);
+}
+.file__area input[type="file"]:valid + .file__dummy .success {
+  display: inline-block;
+}
+.file__area input[type="file"]:valid + .file__dummy .default {
+  display: none;
+}
+
+.submit__button {
+  font-weight: 550 !important;
+  margin: -150px 0px;
+  background-color: var(--darkblue) !important;
+  border-color: var(--darkblue) !important;
+}
+.submit__button:hover {
+  background-color: var(--myyellow) !important;
+  border-color: var(--myyellow) !important;
+  color: var(--black) !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{
+  box-shadow: none!important;
+}
